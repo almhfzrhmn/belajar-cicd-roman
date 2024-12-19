@@ -36,4 +36,4 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         push: true
-        tags: almahfuzhrohman/praktikum-popl-roman:latest
+        tags: almhfzrhmn/belajar-cicd-roman:latest
