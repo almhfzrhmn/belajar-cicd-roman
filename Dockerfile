@@ -8,6 +8,8 @@ COPY static ./static
 
 RUN go build -o /belajar-cicd-pemula
 
-EXPOSE 3000
+# EXPOSE 3000
+RUN CGO_ENABLED=0 G005-linux go build -o /belajar-cicd-roman
+ENV PORT 8080
 
-CMD ["/belajar-cicd-pemula"]
+CMD ["/belajar-cicd-roman"]
